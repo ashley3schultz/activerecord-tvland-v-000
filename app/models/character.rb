@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
 def say_that_thing_you_say
- self.catchphrase
+ self.catchphrase.split(": ")[1]
 end
 #attr_accessor :catchphrase
 
