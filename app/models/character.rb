@@ -4,5 +4,5 @@ class Character < ActiveRecord::Base
 
   def catchphrase
     self.catchphrase
-  end 
+  end
 end
