@@ -8,8 +8,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    characters = []
-    self.characters.each {|c| characters << "#{c.name} #{c.show}"}
-    characters
+    self.characters
   end
 end
