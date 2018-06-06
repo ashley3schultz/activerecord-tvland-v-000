@@ -11,4 +11,5 @@ class Actor < ActiveRecord::Base
     cn = self.characters {|c| c.name}
     sn = self.shows {|s| s.name}
     "#{cn} - #{sn}"
+  end
 end
