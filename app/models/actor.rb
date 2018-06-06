@@ -11,5 +11,5 @@ class Actor < ActiveRecord::Base
     characters = []
     self.characters.each {|c| characters << "#{c.name} #{c.show}"}
     characters
-  end 
+  end
 end
