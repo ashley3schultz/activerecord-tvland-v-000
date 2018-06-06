@@ -6,4 +6,10 @@ class Actor < ActiveRecord::Base
     name = "#{self.first_name} #{self.last_name}"
     name
   end
+
+  def list_roles
+    characters = []
+    self.characters.each {|c| characters << "#{c.name} #{c.show}"}
+    characters
+  end 
 end
