@@ -4,7 +4,4 @@ class Character < ActiveRecord::Base
 
 attr_accessor :catchphrase
 
-def catchphrase(catchphrase)
-  @catchphrase = catchphrase
-end
 end
